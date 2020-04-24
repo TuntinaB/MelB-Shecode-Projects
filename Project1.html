@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <style>
       body {
@@ -36,6 +37,7 @@
         color: rgb(34, 23, 23);
         margin: 3% auto;
       }
+
       h2 {
         font-family: "Cormorant Infant", serif;
         font-size: 35px;
@@ -58,7 +60,7 @@
         color: black;
         padding: 10px;
         font-family: "Cormorant Infant", serif;
-        background-color: #ffb19d;
+        background-color: #e0bab0;
         font-weight: bold;
         font-size: 25px;
         border-radius: 5px;
@@ -71,13 +73,15 @@
         display: inline-block;
         right: 100%;
       }
+
       .artist {
         width: 300px;
         display: inline-block;
+        flex-basis: 50%;
       }
 
       .artist img {
-        width: 100%;
+        width: 90%;
       }
 
       .getTickets {
@@ -92,10 +96,10 @@
         font-weight: bold;
         margin: 50px auto;
       }
+
       .getTickets:hover {
         cursor: pointer;
         color: rgb(34, 23, 23);
-        border-color: ;
       }
 
       .bands {
@@ -103,6 +107,13 @@
         border-radius: 4px;
         border: 5px groove #ffd0cd;
         box-shadow: 1px 1px 1px 1px #03a1b5;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      img {
+        opacity: 5px;
+        transition: ease-in-out;
       }
 
       .description {
@@ -183,8 +194,8 @@
 
         if (age >= 18) {
           alert(
-            `Hi ${fullName}! Thank you for purchasing ${quantity} Friday pass for the Fairy Music Festival, you will receive your purshase details shortly to ${email} 
-         Spread love ❤️ & Good Music🎶!!!!`
+            `Hi ${fullName}! Thank you for purchasing ${quantity} daily pass for the Fairy Music Festival. You will receive your ticket details shortly to ${email} 
+         \nSpread love ❤️ & Good Music🎶!!!!`
           );
         } else {
           alert(
