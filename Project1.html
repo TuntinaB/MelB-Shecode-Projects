@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Fairy Music Festival</title>
+    <title>Queen Music Festival</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap"
       rel="stylesheet"
@@ -12,140 +13,30 @@
   </head>
 
   <body>
-    <style>
-      body {
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        background-color: rgb(34, 23, 23);
-      }
-
-      header {
-        background-image: url("https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-        background-position: center;
-      }
-
-      .header-wrapper {
-        display: flex;
-        margin: 0 auto;
-        max-width: 100%;
-      }
-
-      h1 {
-        font-size: 70px;
-        font-family: "Cormorant Infant", serif;
-        font-weight: bold;
-        color: rgb(34, 23, 23);
-        margin: 3% auto;
-      }
-
-      h2 {
-        font-family: "Cormorant Infant", serif;
-        font-size: 35px;
-        font-weight: bold;
-        color: rgb(0, 202, 228);
-        text-align: left;
-      }
-
-      ul {
-        font-weight: bold;
-        padding: 0px;
-        background-color: rgb(34, 23, 23);
-        margin-top: 20px;
-        list-style: none;
-        text-align: center;
-      }
-
-      li a {
-        display: table;
-        color: black;
-        padding: 10px;
-        font-family: "Cormorant Infant", serif;
-        background-color: #e0bab0;
-        font-weight: bold;
-        font-size: 25px;
-        border-radius: 5px;
-        text-decoration-line: none;
-        box-shadow: 2px 2px 2px 2px;
-        border: 1px solid #03a1b5;
-      }
-
-      li {
-        display: inline-block;
-        right: 100%;
-      }
-
-      .artist {
-        width: 300px;
-        display: inline-block;
-        flex-basis: 50%;
-      }
-
-      .artist img {
-        width: 90%;
-      }
-
-      .getTickets {
-        border-radius: 8px;
-        padding: 20px;
-        border: 3px solid rgb(34, 23, 23);
-        font-family: "Cormorant Infant", serif;
-        font-size: 25px;
-        box-shadow: 3px 3px 3px 3px;
-        color: black;
-        background: rgba(255, 208, 205, 0.7);
-        font-weight: bold;
-        margin: 50px auto;
-      }
-
-      .getTickets:hover {
-        cursor: pointer;
-        color: rgb(34, 23, 23);
-      }
-
-      .bands {
-        background: rgba(3, 161, 181, 0.9);
-        border-radius: 4px;
-        border: 5px groove #ffd0cd;
-        box-shadow: 1px 1px 1px 1px #03a1b5;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      img {
-        opacity: 5px;
-        transition: ease-in-out;
-      }
-
-      .description {
-        text-align: center;
-        font-weight: bold;
-        font-family: "Cormorant Infant", serif;
-        font-size: 30px;
-        padding: 5px;
-        color: #f7f7f7;
-      }
-    </style>
     <header>
       <div class="header-wrapper">
-        <h1>Fairy Music Festival</h1>
-        <button class="getTickets header">Buy Tickets</button>
+        <h1>♕QUEEN MUSIC FESTIVAL</h1>
+        <button class="getTickets header">Tickets</button>
       </div>
     </header>
 
     <div class="wrapper">
       <ul>
-        <li><a href="#Fairy Arts">Fairy Arts</a></li>
-        <li><a href="#Line Up">Line Up</a></li>
-        <li><a href="#Information">Information</a></li>
+        <li><a href="#Fairy">Home</a></li>
+        <li><a href="#Line-Up">Lineup</a></li>
+        <li><a href="#Info">About</a></li>
         <li><a href="#Camping">Camping</a></li>
       </ul>
       <h2>Friday Line Up</h2>
       <br />
       <div class="bands">
         <div class="artist">
-          <img
-            src="https://img.minutoneuquen.com/u/fotografias/m/2020/4/19/f608x342-243961_273684_0.jpg"
-          />
+          <div class="band1">
+            <img
+              src="https://img.minutoneuquen.com/u/fotografias/m/2020/4/19/f608x342-243961_273684_0.jpg"
+            />
+          </div>
+
           <div class="description">Paul MacCartney</div>
         </div>
 
@@ -185,27 +76,6 @@
         </div>
       </div>
     </div>
-    <script>
-      function tickets() {
-        let fullName = prompt("What is your Full Name?");
-        let age = prompt("Please instert your age");
-        let quantity = prompt("How many tickets you want to purchase?");
-        let email = prompt("What is your email address?");
-
-        if (age >= 18) {
-          alert(
-            `Hi ${fullName}! Thank you for purchasing ${quantity} daily pass for the Fairy Music Festival. You will receive your ticket details shortly to ${email} 
-         \nSpread love ❤️ & Good Music🎶!!!!`
-          );
-        } else {
-          alert(
-            `Sorry ${fullName}, unfortunately Fairy Music Festival is for +18 adults only. Come back next year, we will have space for all ages! 
-         But in the mean time Spread love ❤️ & Good Music🎶!!!!`
-          );
-        }
-      }
-      let getTickets = document.querySelector(".getTickets");
-      getTickets.addEventListener("click", tickets);
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
