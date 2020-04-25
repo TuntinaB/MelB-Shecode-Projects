@@ -12,7 +12,7 @@ function tickets() {
   } else {
     alert(
       `Sorry ${fullName}, unfortunately Fairy Music Festival is for +18 adults only. Come back next year, we will have space for all ages! 
-         But in the mean time Spread love ❤️ & Good Music🎶!!!!`
+             \nSpread love ❤️ & Good Music🎶!!!!`
     );
   }
 }
